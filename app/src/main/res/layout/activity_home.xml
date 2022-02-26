@@ -7,7 +7,7 @@
     tools:context=".HomeActivity">
 
     <Button
-        android:id="@+id/buttonStartCalculator"
+        android:id="@+id/homeButtonStartCalculator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Calculator"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.75" />
 
     <TextView
-        android:id="@+id/LaunchTitle"
+        android:id="@+id/homeTitle"
         android:layout_width="303dp"
         android:layout_height="73dp"
         android:text="Body Mass Index Calculator"
@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.178" />
 
     <TextView
-        android:id="@+id/LauncherGreeting"
+        android:id="@+id/homeGreeting"
         android:layout_width="326dp"
         android:layout_height="153dp"
         android:text="Welcome to my newly created app. Hopefully you have a great experience  with it and like it as much as i do. Please consider  Pro Version!"

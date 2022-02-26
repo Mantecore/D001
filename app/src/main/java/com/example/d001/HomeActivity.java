@@ -16,7 +16,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button buttonStartCalculator = findViewById(R.id.buttonStartCalculator);
+        Button buttonStartCalculator = findViewById(R.id.homeButtonStartCalculator);
         //buttonStartCalculator.setOnClickListener(view -> System.out.println("Button gedrückt"));
         //buttonStartCalculator.setOnClickListener(view -> Log.i(HomeActivity.class.getSimpleName(),"Button gedrückt"));
         buttonStartCalculator.setOnClickListener(view -> {
