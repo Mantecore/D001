@@ -29,6 +29,7 @@ public class FormActivity extends AppCompatActivity {
             Intent calculateBMI = new Intent(this, CalculateActivity.class);
             String height = editHeight.getText().toString();
             String weight = editWeight.getText().toString();
+
             calculateBMI.putExtra("Height", height);
             calculateBMI.putExtra("Weight", weight);
             startActivity(calculateBMI);
