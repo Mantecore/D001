@@ -30,7 +30,7 @@ public class BMI {
 
 
 
-    String[] bmiList = new ArrayList<>
+    //String[] bmiList = new ArrayList<>
 
 
 }
