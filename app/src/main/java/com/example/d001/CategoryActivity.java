@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import util.BMI;
+
 public class CategoryActivity extends AppCompatActivity {
 
     @Override
@@ -17,17 +19,12 @@ public class CategoryActivity extends AppCompatActivity {
 
         ListView categoryList = findViewById(R.id.categoryList);
 
-        String[] bmiCategories = {
-                "Underweight",
-                "Healthy Weight",
-                "Overweight",
-                "Obese",
-        };
+        String[] bmiCategories = BMI.getBmiCategories();
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, bmiCategories);
         categoryList.setAdapter(adapter);
         categoryList.setOnItemClickListener((parent, view, position, id) -> {
-            Intent intent = new Intent(this, HomeActivity.class);
+            Intent intent = new Intent(this, LegendActivity.class);
             intent.putExtra("position",position);
             startActivity(intent);
         });

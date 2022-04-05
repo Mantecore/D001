@@ -1,6 +1,7 @@
 package util;
 
-import java.util.ArrayList;
+
+import java.util.OptionalDouble;
 
 public class BMI {
 
@@ -8,6 +9,14 @@ public class BMI {
   public BMI() { }
 
     public double BMIValue;
+    public static Double high;
+    public static Double low;
+    private static final String[] bmiCategories = {
+          "Underweight",
+          "Healthy Weight",
+          "Overweight",
+          "Obese",
+  };
 
 
     public double compute(double height, double weight) {
@@ -28,9 +37,23 @@ public class BMI {
       else return "Obese";
     }
 
+    public static void Rating(Double low, Double high) {
+      BMI.low =low;
+      BMI.high = high;
+    }
 
 
-    //String[] bmiList = new ArrayList<>
+    public static String[] getBmiCategories() {return bmiCategories;}
+  //public String getBmiCategories() {return  bmiCategories[OrdinalBuilder]};
+
+
+  public static Double getHigh() {
+    return high;
+  }
+
+  public static Double getLow() {
+    return low;
+  }
 
 
 }
