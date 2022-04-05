@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.widget.Button;
 
 import java.text.Normalizer;
@@ -25,5 +26,12 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
                 });
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.home,menu);
+        return true;
     }
 }

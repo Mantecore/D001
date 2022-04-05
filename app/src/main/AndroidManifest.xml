@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.D001">
         <activity
-            android:name=".HomeActivity"
+            android:name=".CategoryActivity"
             android:exported="false" />
         <activity
             android:name=".FormActivity"
@@ -22,7 +22,7 @@
             android:name=".LegendActivity"
             android:exported="false" />
         <activity
-            android:name=".CategoryActivity"
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
