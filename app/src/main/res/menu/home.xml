@@ -6,7 +6,7 @@
         android:title="Home"/>
 
     <item
-        android:id="@+id/menu_general_item_calculate"
+        android:id="@+id/menu_general_item_form"
         android:title="Calculate"/>
 
     <item

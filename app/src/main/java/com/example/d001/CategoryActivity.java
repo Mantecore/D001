@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -30,5 +32,28 @@ public class CategoryActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.home, menu);
+        menu.findItem(R.id.menu_general_item_bmioverview).setEnabled(false);
+        return true;
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case R.id.menu_general_item_form:
+                startActivity(new Intent(this, FormActivity.class));
+                return true;
+            case R.id.menu_general_item_home:
+                startActivity(new Intent(this, HomeActivity.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(menuItem);
+        }
     }
 }
