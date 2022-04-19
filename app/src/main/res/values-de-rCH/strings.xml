@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">D001</string>
+    <string name="calculated_bmi">Errechnetä BMI</string>
+    <string name="height">Grössi:</string>
+    <string name="weight">Gwicht:</string>
+    <string name="your_bmi">Din BMI:</string>
+    <string name="your_rating">Dis Rating:</string>
+    <string name="start_calculator">Rechnä starte</string>
+    <string name="body_mass_index_calculator">Body Mass Index Rechnär</string>
+    <string name="welcomeText">Herzlich Willkommä i minnere BMi App. Ich hoffe d App isch das wo du suechsch und ich wünsch der vill Spass demit. Bitte denk as Bewerte vo de App. Merci!</string>
+</resources>

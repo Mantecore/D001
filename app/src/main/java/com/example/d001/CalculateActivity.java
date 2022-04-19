@@ -3,6 +3,7 @@ package com.example.d001;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,6 +24,11 @@ public class CalculateActivity extends AppCompatActivity {
         TextView weight = findViewById(R.id.calculateInsertedWeight);
         TextView OutputBMI = findViewById(R.id.calculateOutputBMI);
         TextView OutputRating = findViewById(R.id.calculateRatingOutput);
+        TextView Title = findViewById(R.id.calculateTitle);
+
+        SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
+        String user = prefs.getString("user", "Default User");
+        Title.setText("Calculated BMI of "+user);
 
         String insertedHeight = getIntent().getStringExtra("Height");
         String insertedWeight = getIntent().getStringExtra("Weight");
@@ -62,6 +68,8 @@ public class CalculateActivity extends AppCompatActivity {
                 return true;
             case R.id.menu_general_item_bmioverview:
                 startActivity(new Intent(this, CategoryActivity.class));
+            case R.id.menu_general_item_user:
+                startActivity(new Intent(this,UserActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(menuItem);

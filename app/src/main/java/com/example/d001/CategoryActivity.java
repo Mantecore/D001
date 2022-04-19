@@ -51,6 +51,8 @@ public class CategoryActivity extends AppCompatActivity {
                 return true;
             case R.id.menu_general_item_home:
                 startActivity(new Intent(this, HomeActivity.class));
+            case R.id.menu_general_item_user:
+                startActivity(new Intent(this,UserActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(menuItem);

@@ -61,6 +61,8 @@ public class FormActivity extends AppCompatActivity {
                 return true;
             case R.id.menu_general_item_bmioverview:
                 startActivity(new Intent(this, CategoryActivity.class));
+            case R.id.menu_general_item_user:
+                startActivity(new Intent(this,UserActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(menuItem);

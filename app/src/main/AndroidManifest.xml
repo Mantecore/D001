@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.D001">
         <activity
+            android:name=".UserActivity"
+            android:exported="false" />
+        <activity
             android:name=".CategoryActivity"
             android:exported="false" />
         <activity

@@ -12,4 +12,8 @@
     <item
         android:id="@+id/menu_general_item_bmioverview"
         android:title="BMI Category Overview"/>
+
+    <item
+        android:id="@+id/menu_general_item_user"
+        android:title="User"/>
 </menu>
